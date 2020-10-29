@@ -1,0 +1,12 @@
+# Maximum length of RPName 
+# (default: 26)
+rpname-length: 26
+# List of illegal characters
+# (default: "!@#&?$^:*}{")
+characters-blacklist: "!@#&?$^:*}{"
+# Request timeout in ticks (20 per second)
+# (default: 300) 
+timeout: 300
+# default name color (Placeholder will return RPname with this color)
+# (default : "&7")
+name-color: "&7"

@@ -1,0 +1,38 @@
+name: RPNames
+main: my.dmitrylovin.plugin.rpnames.RPNames
+version: 1.2
+author: DmitryLovin
+api-level: 1.13
+depend: [PlaceholderAPI]
+description: >
+             RPNames
+commands:
+  rpname:
+    description: Set your own RPName
+    usage: "usage: /<command> [name]"
+    permission: rpnames.rpname
+    permission-message: You don't have permission
+  findname:
+    description: Find real username with RPName
+    usage: "usage: /<command> [name]"
+    permission: rpnames.findname
+    permission-message: You don't have permission
+  rpyes:
+    description: Confirm new RPName
+  rpno:
+    description: Decline new RPName
+  forcename:
+    description: Change user's rpname 
+    usage: "usage: /<command> [username] [rpname]"
+    permission: rpnames.force
+    permission-message: You don't have permission
+permissions:
+  rpnames.findname:
+    default: true
+    description: Allows you to use /findname
+  rpnames.rpname:
+    default: true
+    description: Allows you to use /rpname
+  rpnames.force:
+    default: op
+    description: Allows you to use /forcename
